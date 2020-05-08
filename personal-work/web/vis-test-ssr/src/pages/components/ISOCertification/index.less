@@ -1,0 +1,173 @@
+.ISO-Certification {
+  &>div {
+    padding: 100px 0;
+
+    &>p {
+      font-size: 18px;
+      color: rgba(76, 76, 76, 1);
+      line-height: 28px;
+      margin-bottom: 5px;
+    }
+  }
+
+  h2 {
+    line-height: 1;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 22px;
+    color: rgba(51, 51, 51, 1);
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    li {
+      position: relative;
+      width: 285px;
+      height: 436px;
+      margin-top: 40px;
+      padding-top: 220px;
+      border-radius: 2px;
+      text-align: center;
+      transition: all 0.3s linear;transition: all 0.3s linear;
+      box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    .mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+      border-radius: 2px;
+      transition: all 0.3s linear;
+      background: rgba(0, 0, 0, .7);
+    }
+
+    li>div:first-child {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 220px;
+      background-size: cover;
+      transition: all 0.35s linear;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    li>div:last-child {
+      position: relative;
+      height: 206px;
+      padding: 20px;
+      padding-bottom: 0;
+      z-index: 1;
+      transition: all 0.3s linear;
+
+      h5, summary, p {
+        transition: all 0.3s linear;
+      }
+
+      h5,
+      summary {
+        line-height: 1;
+      }
+
+      h5 {
+        position: relative;
+        right: 4px;
+        width: 253px;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        color: rgba(51, 51, 51, 1);
+        line-height: 28px;
+        margin-bottom: 8px;
+      }
+
+      summary {
+        font-size: 12px;
+        font-weight: bold;
+        color: rgba(76, 76, 76, 1);
+        line-height: 18px;
+        margin-bottom: 12px;
+      }
+
+      p {
+        font-size: 12px;
+        color: rgba(154, 154, 154, 1);
+        line-height: 20px;
+        text-align: left;
+      }
+    }
+
+    .ISO_Certification_List-1>div:first-child {
+      background-image: url(../../../assets/images/IOS-1.png);
+    }
+
+    .ISO_Certification_List-2>div:first-child {
+      background-image: url(../../../assets/images/IOS-2.png);
+    }
+
+    .ISO_Certification_List-3>div:first-child {
+      background-image: url(../../../assets/images/IOS-3.png);
+    }
+
+    .ISO_Certification_List-4>div:first-child {
+      background-image: url(../../../assets/images/IOS-4.png);
+    }
+
+    .ISO_Certification_List-5>div:first-child {
+      background-image: url(../../../assets/images/IOS-5.png);
+    }
+
+    .ISO_Certification_List-6>div:first-child {
+      background-image: url(../../../assets/images/IOS-6.png);
+    }
+
+    .ISO_Certification_List-7>div:first-child {
+      background-image: url(../../../assets/images/IOS-7.png);
+    }
+
+    .ISO_Certification_List-8>div:first-child {
+      background-image: url(../../../assets/images/IOS-8.png);
+    }
+
+    li:hover {
+      .mask {
+        opacity: 1;
+      }
+
+      &>div:first-child {
+        height: 100%;
+      }
+
+      &>div:last-child {
+        transform: translate3d(0, -135px, 0);
+
+        h5, summary, p {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+}
+
+.ISO-Certification-en {
+  ul li {
+    height: 520px;
+    & > div:last-child {
+      height: 300px;
+      summary {
+        position: relative;
+        right: 7px;
+        width: 259px;
+      }
+    }
+  }
+}

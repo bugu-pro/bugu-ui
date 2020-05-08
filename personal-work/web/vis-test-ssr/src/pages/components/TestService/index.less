@@ -1,0 +1,192 @@
+.test-servicce {
+  position: relative;
+  padding-top: 48.4%;
+
+  :global {
+    #test-service {
+      top: -255px;
+    }
+  }
+
+  &>div {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../../../assets/images/test_service.jpg) no-repeat center center/cover;
+
+    &>div {
+      text-align: center;
+    }
+
+    h2,
+    h3,
+    p {
+      margin: 0;
+      color: #fff;
+      line-height: 1;
+    }
+
+    h2 {
+      font-size: 36px;
+      font-weight: normal;
+      margin-bottom: 24px;
+    }
+
+    .detail {
+      width: 1080px;
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: 400;
+      text-align: left;
+      margin: 0 auto 35px;
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    li {
+      position: relative;
+      width: 18.67%;
+      min-height: 335px;
+      background: #fff;
+      text-align: center;
+      padding: 18px 16px 0;
+      transition: all .3s linear;
+
+      h3,
+      p {
+        line-height: 1;
+      }
+
+      h3 {
+        font-size: 24px;
+        color: #323232;
+        margin-bottom: 12px;
+        white-space: nowrap;
+        font-weight: bold;
+      }
+
+      p.progress {
+        color: #4C4C4C;
+        font-size: 12px;
+        margin-bottom: 6px;
+        font-weight: bold;
+      }
+
+      .detail-list {
+        display: flex;
+        color: #999;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: left;
+
+        label {
+          margin-right: 3px;
+        }
+      }
+
+      &>span {
+        display: block;
+        width: 60px;
+        height: 60px;
+        margin: auto;
+        margin-bottom: 16px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        // transition: all .1s linear;
+      }
+    }
+
+    .Product_Inspection_Services_1>span {
+      background-image: url(../../../assets/images/Product_Inspection_Services_1.png);
+    }
+
+    .Product_Inspection_Services_2>span {
+      background-image: url(../../../assets/images/Product_Inspection_Services_2.png);
+    }
+
+    .Product_Inspection_Services_3>span {
+      background-image: url(../../../assets/images/Product_Inspection_Services_3.png);
+    }
+
+    .Product_Inspection_Services_4>span {
+      background-image: url(../../../assets/images/Product_Inspection_Services_4.png);
+    }
+
+    .Product_Inspection_Services_5>span {
+      background-image: url(../../../assets/images/Product_Inspection_Services_5.png);
+    }
+
+    li:hover {
+      transform: translate3d(0, -20px, -10px);
+
+      &.Product_Inspection_Services_1>span {
+        background-image: url(../../../assets/images/Product_Inspection_Services_1_active.png);
+      }
+
+      &.Product_Inspection_Services_2>span {
+        background-image: url(../../../assets/images/Product_Inspection_Services_2_active.png);
+      }
+
+      &.Product_Inspection_Services_3>span {
+        background-image: url(../../../assets/images/Product_Inspection_Services_3_active.png);
+      }
+
+      &.Product_Inspection_Services_4>span {
+        background-image: url(../../../assets/images/Product_Inspection_Services_4_active.png);
+      }
+
+      &.Product_Inspection_Services_5>span {
+        background-image: url(../../../assets/images/Product_Inspection_Services_5_active.png);
+      }
+    }
+
+  }
+}
+
+.en-test-service {
+  padding-top: 57.7%;
+  &>div {
+    background: url(../../../assets/images/Product-Inspection-Services-en.jpg) no-repeat center center/cover;
+  }
+  div li {
+    min-height: 437px;
+    padding-bottom: 20px;
+
+    h3 {
+      font-size: 20px;
+      line-height: 1;
+      font-weight: bold;
+      white-space: normal;
+      word-break: break-word;
+      color: rgba(50, 50, 50, 1);
+    }
+
+    .detail {
+      line-height: 24px;
+    }
+
+    p.progress {
+      position: relative;
+      margin-bottom: 2px;
+    }
+    .detail-list {
+      line-height: 18px;
+      word-break: break-word;
+    }
+  }
+}
+
+.g-en-test-service {
+  div li {
+    min-height: 461px;
+  }
+}

@@ -1,0 +1,86 @@
+html, body, #root {
+  height: 100%;
+  font-family:SourceHanSansCN-Regular,SourceHanSansCN;
+}
+
+body {
+  margin: 0;
+}
+
+.content-container {
+  width: 1200px!important;
+  margin: 0 auto;
+}
+
+body .ant-menu-item:hover, .ant-menu-item-active, .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open, .ant-menu-submenu-active, .ant-menu-submenu-title:hover {
+  color: #AA2A29;
+  background: rgba(170,42,41,0.1);
+}
+
+body .ant-menu-vertical.ant-menu-sub .ant-menu-item, .ant-menu-vertical-left.ant-menu-sub .ant-menu-item, .ant-menu-vertical-right.ant-menu-sub .ant-menu-item {
+  margin: 0;
+  &:first-child {
+    margin-top: 4px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  line-height: 1;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.ant-menu-submenu-popup, .ant-dropdown {
+  z-index: 100000!important;
+}
+
+.ant-menu-submenu > .ant-menu {
+  width: 144px;
+  max-width: 144px;
+  min-width: auto!important;
+  text-align: center;
+  padding-bottom: 8px!important;
+}
+
+body .ant-menu-vertical.ant-menu-sub .ant-menu-item, .ant-menu-vertical-left.ant-menu-sub .ant-menu-item, .ant-menu-vertical-right.ant-menu-sub .ant-menu-item,
+body .ant-dropdown-menu-item, .ant-dropdown-menu-submenu-title {
+  margin: 0;
+  height: 28px;
+  font-size: 12px;
+  padding: 0 16px;
+  max-width: 144px;
+  line-height: 28px;
+  &:first-child {
+    margin-top: 4px;
+  }
+}
+
+body .ant-dropdown-menu-item-selected, .ant-dropdown-menu-submenu-title-selected, .ant-dropdown-menu-item-selected > a, .ant-dropdown-menu-submenu-title-selected > a {
+  color: #AA2A29;
+  background: rgba(170,42,41,0.1);
+}
+
+body .ant-dropdown-menu-item:hover, .ant-dropdown-menu-submenu-title:hover {
+  background: rgba(170,42,41,0.1);
+}
+
+.general-anchor {
+  position: absolute;
+  top: -80px;
+  left: 50%;
+}
+
+.ant-menu-item > a {
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+li.ant-menu-item > a:hover, li.ant-menu-item-selected > a, .ant-menu-item-selected > a:hover {
+  color: #AA2A29;
+}

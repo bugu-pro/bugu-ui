@@ -1,0 +1,186 @@
+.Supplier-Assessment {
+  position: relative;
+  height: 500px;
+  background: #AA2A29;
+
+  &>div {
+    position: relative;
+    padding: 100px 0 0;
+    height: 500px;
+
+    h2 {
+      line-height: 1;
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 48px;
+      text-align: center;
+      color: rgba(255, 255, 255, 1);
+    }
+
+    &>div.detail {
+      display: flex;
+      justify-content: space-between;
+
+      &>p {
+        width: 600px;
+        font-size: 16px;
+        line-height: 32px;
+        color: rgba(255, 255, 255, 1);
+      }
+
+      ul {
+        width: 490px;
+
+        li {
+          display: inline-block;
+          width: 50%;
+          font-size: 18px;
+          color: rgba(255, 255, 255, 1);
+          line-height: 28px;
+          margin-bottom: 16px;
+
+          &:before {
+            content: "";
+            display: inline-block;
+            width: 22px;
+            height: 23px;
+            margin-right: 14px;
+            vertical-align: text-bottom;
+            background: url(../../../assets/images/arrow_right_white.png) no-repeat center/cover;
+          }
+        }
+      }
+    }
+
+    &>ul:last-child {
+      height: 290px;
+      position: absolute;
+      bottom: -136px;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
+      z-index: 100;
+
+      li {
+        display: inline-block;
+        width: 224px;
+        height: 290px;
+        padding: 16px;
+        background: #fff;
+        border-radius: 2px;
+        transition: all .3s linear;
+        box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.3);
+
+        div:first-child {
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+          margin: 0 auto 16px;
+          background-size: cover;
+          background-color: #fff;
+          transition: all .3s linear;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+
+
+        h4 {
+          text-align: center;
+          font-size: 20px;
+          font-weight: bold;
+          color: rgba(50, 50, 50, 1);
+          line-height: 1;
+          margin-bottom: 16px;
+          transition: all .3s linear;
+        }
+
+        p {
+          font-size: 12px;
+          color: rgba(76, 76, 76, 1);
+          line-height: 20px;
+          transition: all .3s linear;
+        }
+      }
+
+      li.Supplier-Assessment-1 div {
+        background-image: url(../../../assets/images/SupplierAssessment_1.png);
+      }
+
+      li.Supplier-Assessment-2 div {
+        background-image: url(../../../assets/images/SupplierAssessment_2.png);
+      }
+
+      li.Supplier-Assessment-3 div {
+        background-image: url(../../../assets/images/SupplierAssessment_3.png);
+      }
+
+      li.Supplier-Assessment-4 div {
+        background-image: url(../../../assets/images/SupplierAssessment_4.png);
+      }
+
+      li.Supplier-Assessment-5 div {
+        background-image: url(../../../assets/images/SupplierAssessment_5.png);
+      }
+
+      li:hover {
+
+        box-shadow: 3px 8px 18px 2px rgba(0, 0, 0, 0.3);
+        transform: translate3d(0, -12px, -8px);
+
+        div.Supplier-Assessment-icon-5 {
+          background-image: url(../../../assets/images/SupplierAssessment_5-white.png);
+        }
+
+        div.Supplier-Assessment-icon-1 {
+          background-image: url(../../../assets/images/SupplierAssessment_1-white.png);
+        }
+
+        div.Supplier-Assessment-icon-2 {
+          background-image: url(../../../assets/images/SupplierAssessment_2-white.png);
+        }
+
+        div.Supplier-Assessment-icon-3 {
+          background-image: url(../../../assets/images/SupplierAssessment_3-white.png);
+        }
+
+        div.Supplier-Assessment-icon-4 {
+          background-image: url(../../../assets/images/SupplierAssessment_4-white.png);
+        }
+      }
+    }
+  }
+}
+
+.Supplier-Assessment-en {
+  & > div > ul:last-child {
+    bottom: -202px;
+    li {
+      height: 420px;
+      h4 {
+        position: relative;
+        width: 200px;
+        right: 4px;
+        text-align: center;
+      }
+    }
+  }
+  & > div > div.detail {
+    ul li {
+      position: relative;
+      padding-left: 36px;
+      vertical-align: text-top;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 2px;
+      }
+    }
+  }
+}
+
+.Supplier-Assessment-vi {
+
+}

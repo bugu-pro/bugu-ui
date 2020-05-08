@@ -1,0 +1,131 @@
+.Social-Responsibility {
+  background: #AA2A29;
+
+  &>div {
+    padding: 100px 0;
+
+    &>div:first-child {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+
+      div {
+        width: 600px;
+
+        h2 {
+          line-height: 1;
+          font-size: 32px;
+          font-weight: bold;
+          margin-bottom: 24px;
+          color: rgba(255, 255, 255, 1);
+        }
+
+        p {
+          font-size: 18px;
+          line-height: 32px;
+          color: rgba(255, 255, 255, 1);
+        }
+      }
+
+      ul {
+        width: 544px;
+        padding-top: 55px;
+
+        li {
+          display: inline-block;
+          width: 50%;
+          font-size: 18px;
+          color: rgba(255, 255, 255, 1);
+          line-height: 44px;
+
+          &:before {
+            content: "";
+            display: inline-block;
+            width: 22px;
+            height: 23px;
+            margin-right: 14px;
+            vertical-align: text-bottom;
+            background: url(../../../assets/images/arrow_right_white.png) no-repeat center/cover;
+          }
+        }
+      }
+    }
+
+    &>div:last-child {
+      height: 406px;
+      background: #fff url(../../../assets/images/Social_Responsibility_bg.png) no-repeat 100% 0 / auto 406px;
+
+      ul {
+        width: 656px;
+        margin: 0;
+        padding: 94px 63px 0 63px;
+      }
+
+      li {
+        position: relative;
+        display: inline-block;
+        width: 50%;
+        color: #4C4C4C;
+        font-size: 28px;
+        font-weight: 500;
+        color: rgba(76, 76, 76, 1);
+        line-height: 1;
+        margin-bottom: 94px;
+        padding-left: 79px;
+
+        &:before {
+          position: absolute;
+          content: '';
+          left: 0;
+          top: 50%;
+          width: 63px;
+          height: 64px;
+          margin-top: -32px;
+          background-size: cover;
+          vertical-align: middle;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+
+      li.SocialResponsibility-1:before {
+        background-image: url(../../../assets/images/SocialResponsibility_1.png);
+      }
+
+      li.SocialResponsibility-2:before {
+        background-image: url(../../../assets/images/SocialResponsibility_2.png);
+      }
+
+      li.SocialResponsibility-3:before {
+        background-image: url(../../../assets/images/SocialResponsibility_3.png);
+      }
+
+      li.SocialResponsibility-4:before {
+        background-image: url(../../../assets/images/SocialResponsibility_4.png);
+      }
+    }
+  }
+}
+
+.Social-Responsibility-en {
+  &>div {
+    &>div:first-child {
+      ul li {
+        line-height: 56px;
+      }
+    }
+    &>div:last-child {
+      li {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.Social-Responsibility-vi {
+  & > div > div:first-child {
+    ul li {
+      font-size: 16px;
+    }
+  }
+}

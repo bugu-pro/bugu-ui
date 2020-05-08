@@ -1,0 +1,238 @@
+// 菜单
+.header-wrapper {
+  height: 80px !important;
+
+  :global {
+    .ant-affix {
+      z-index: 100000;
+    }
+  }
+}
+
+.header {
+  position: relative;
+  z-index: 10000;
+
+  &>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px !important;
+    color: #fff;
+
+    &>span:first-child {
+      min-width: 300px;
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      cursor: pointer;
+
+      &:before {
+        content: "";
+        display: inline-block;
+        width: 45px;
+        height: 38px;
+        min-width: 45px;
+        margin-right: 12px;
+        background: url('../../../assets/images/vis_logo.png') no-repeat center/cover;
+      }
+    }
+
+    &>div {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    :global {
+      .ant-menu {
+        color: #fff;
+        border: none;
+        line-height: 22px;
+        background: transparent;
+      }
+
+      .ant-menu-horizontal>.ant-menu-item,
+      .ant-menu-horizontal>.ant-menu-submenu {
+        border-bottom: none;
+        background: transparent !important;
+      }
+
+      .ant-menu-item:hover,
+      .ant-menu-item-active,
+      .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+      .ant-menu-submenu-active,
+      .ant-menu-submenu-title:hover {
+        color: #fff;
+      }
+
+      .ant-menu-item,
+      .ant-menu-submenu-title {
+        padding: 0 40px;
+        font-size: 16px;
+        line-height: 24px;
+
+        a {
+          color: #fff;
+        }
+      }
+
+      .ant-menu-horizontal>.ant-menu-item-selected>a,
+      .ant-menu-horizontal>.ant-menu-item>a {
+        color: #fff;
+      }
+
+      .ant-menu-horizontal>.ant-menu-item:hover,
+      .ant-menu-horizontal>.ant-menu-submenu:hover,
+      .ant-menu-horizontal>.ant-menu-item-active,
+      .ant-menu-horizontal>.ant-menu-submenu-active,
+      .ant-menu-horizontal>.ant-menu-item-open,
+      .ant-menu-horizontal>.ant-menu-submenu-open,
+      .ant-menu-horizontal>.ant-menu-item-selected,
+      .ant-menu-horizontal>.ant-menu-submenu-selected {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.extra {
+  display: inline-block;
+  height: 24px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.language-selector {
+  label {
+    margin-right: 4px;
+    .extra
+  }
+}
+
+.right-menu-box {
+  display: flex;
+  justify-content: space-between;
+  width: 180px !important;
+  min-width: 200px;
+  align-items: center;
+  height: 32px !important;
+  padding-left: 48px;
+  margin-left: 8px;
+  border-left: 1px solid #fff;
+
+  a {
+    .extra;
+  }
+}
+
+
+.header-moved {
+  background: #fff;
+  transition: all 0.3s linear;
+
+  .language-selector label {
+    color: #333;
+  }
+
+  .right-menu-box {
+    border-color: #333;
+
+    a {
+      color: #333;
+    }
+  }
+
+  &>div {
+    color: #333;
+
+    &>span:first-child {
+      &:before {
+        background: url('../../../assets/images/vis_logo_active.png') no-repeat center/cover;
+      }
+    }
+
+    :global {
+      .ant-menu {
+        color: #333;
+      }
+
+
+      .ant-menu-item,
+      .ant-menu-submenu-title {
+        color: #333;
+
+        a {
+          color: #333;
+        }
+      }
+
+      .ant-menu-horizontal>.ant-menu-item-selected>a,
+      .ant-menu-horizontal>.ant-menu-item>a {
+        color: #333;
+      }
+
+      .ant-menu-item:hover,
+      .ant-menu-item-active,
+      .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+      .ant-menu-submenu-active,
+      .ant-menu-submenu-title:hover {
+        color: #AA2A29;
+
+        a {
+          color: #AA2A29;
+        }
+      }
+    }
+  }
+}
+
+.english-header {
+  .right-menu-box {
+    padding-left: 32px;
+    width: 179px!important;
+    min-width: 179px!important;
+  }
+  &>div {
+    &>span:first-child {
+      max-width: 349px;
+      font-size:15px;
+      font-weight:500;
+      line-height:18px;
+    }
+    :global {
+      .ant-menu-item,
+      .ant-menu-submenu-title {
+        padding: 0 24px;
+      }
+
+    }
+  }
+}
+
+.vietnamese-header {
+  .right-menu-box {
+    padding-left: 24px;
+    width: 240px!important;
+    min-width: 240px!important;
+  }
+  .language-selector {
+    label {
+      font-size: 14px;
+    }
+  }
+  &>div {
+    :global {
+      .ant-menu-item,
+      .ant-menu-submenu-title {
+        padding: 0;
+        margin: 0 15px;
+        font-size: 14px;
+      }
+
+    }
+  }
+}

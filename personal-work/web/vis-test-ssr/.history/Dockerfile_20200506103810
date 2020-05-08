@@ -1,0 +1,5 @@
+FROM node:10.20
+LABEL maintainer Viccsen<252704620@qq.com>
+RUN npm config set registry https://registry.taobao.org && npm i
+
+EXPOSE 80

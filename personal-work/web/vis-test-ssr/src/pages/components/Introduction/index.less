@@ -1,0 +1,161 @@
+.Introduction {
+  position: relative;
+
+  &>div {
+    padding: 100px 0 0;
+    text-align: center;
+
+    &>p {
+      width: 1124px;
+      font-size: 16px;
+      text-align: left;
+      line-height: 28px;
+      margin: 0 auto 40px;
+      color: rgba(76, 76, 76, 1);
+    }
+  }
+
+  h2 {
+    line-height: 1;
+    font-size: 36px;
+    font-weight: bold;
+    color: rgba(51, 51, 51, 1);
+    margin-bottom: 28px;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    li {
+      position: relative;
+      width: 368px;
+      height: 220px;
+      margin-top: 40px;
+      border-radius: 2px;
+      text-align: center;
+      overflow: hidden;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &>h5 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 64px;
+        z-index: 100;
+        line-height: 1;
+        padding-top: 12px;
+        transition: all .3s linear;
+
+        span {
+          display: inline-block;
+          padding: 0 16px;
+          font-size: 22px;
+          font-weight: 500;
+          line-height: 40px;
+          border-radius: 2px;
+          color: rgba(255, 255, 255, 1);
+          border: 1px solid rgba(255, 255, 255, 1);
+        }
+      }
+    }
+
+    li>div {
+      position: absolute;
+      top: 156px;
+      left: 0;
+      right: 0;
+      height: 220px;
+      padding-top: 102px;
+      padding-bottom: 0;
+      border-radius: 2px;
+      transition: all .3s linear;
+      background: rgba(0, 0, 0, .7);
+
+      summary {
+        line-height: 1;
+      }
+
+      summary {
+        opacity: 0;
+        width: 272px;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: left;
+        margin: 0 auto;
+        transition: all 1s linear;
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+
+    li:hover {
+      &>div {
+        transform: translate3d(0, -156px, 0);
+      }
+
+      h5 {
+        transform: translate3d(0, -125px, 0);
+      }
+
+      summary {
+        opacity: 1;
+      }
+    }
+
+    .Introduction_List-1 {
+      background-image: url(../../../assets/images/Introduction_List-1.png);
+    }
+
+    .Introduction_List-2 {
+      background-image: url(../../../assets/images/Introduction_List-2.png);
+    }
+
+    .Introduction_List-3 {
+      background-image: url(../../../assets/images/Introduction_List-3.png);
+    }
+  }
+
+}
+
+.introduction-en {
+  ul li {
+    div summary {
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    // height: 320px;
+    // & > div {
+    //   height: 320px;
+    //   top: 256px;
+    // }
+    // &:hover {
+    //   & > div {
+    //     transform: translate3d(0, -256px, 0);
+    //   }
+    //   h5 {
+    //     transform: translate3d(0, -225px, 0);
+    //   }
+    // }
+  }
+}
+
+.introduction-vi {
+  ul li div {
+    padding-top: 90px;
+
+    summary {
+      line-height: 18px;
+    }
+  }
+
+  ul li:hover {
+    h5 {
+      transform: translate3d(0, -135px, 0);
+    }
+  }
+}
