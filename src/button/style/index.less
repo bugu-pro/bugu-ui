@@ -1,0 +1,103 @@
+@import "../../style";
+
+@prefix-btn: @{prefix}-btn;
+@bugu-btn-base-height: 32px;
+@bugu-btn-base-size: 14px;
+
+.@{prefix-btn} {
+    height: @bugu-btn-base-height;
+    line-height: 1.5715;
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    padding: 4px 15px;
+    font-size: @bugu-btn-base-size;
+    border-radius: 2px;
+    background: #fff;
+    background-image: none;
+    touch-action: manipulation;
+    border: 1px solid #d9d9d9;
+    color: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    & > span {
+        display: inline-block;
+    }
+    &:active, &:focus {
+        outline: 0;
+    }
+    &:hover {
+        filter: brightness(1.15);
+    }
+    &:before {
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        bottom: -1px;
+        left: -1px;
+        z-index: 1;
+        display: none;
+        background: #fff;
+        border-radius: inherit;
+        opacity: .35;
+        -webkit-transition: opacity .2s;
+        transition: opacity .2s;
+        content: "";
+        pointer-events: none;
+    }
+}
+
+button.@{prefix-btn}-loading {
+    pointer-events: none;
+    &:before {
+        display: block;
+    }
+}
+
+.@{prefix-btn}-lg {
+    height: @bugu-btn-base-height + 8;
+    padding: 6px 15px;
+    font-size: @bugu-btn-base-size + 2;
+    border-radius: 2px;
+}
+
+.@{prefix-btn}-sm {
+    height: @bugu-btn-base-height - 8;
+    padding: 0 7px;
+    font-size: @bugu-btn-base-size;
+    border-radius: 2px;
+}
+
+.@{prefix-btn}-loading-icon {
+    margin-right: 4px;
+}
+
+.@{prefix-btn}-default {
+    &:hover {
+        color: @primary-color;
+        border-color: @primary-color;
+    }
+}
+
+.@{prefix-btn}-primary {
+    color: #fff;
+    background: @primary-color;
+    border-color: @primary-color;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+    &:hover {
+        
+    }
+}
+
+.@{prefix-btn}-danger {
+    color: #fff;
+    background: @error-color;
+    border-color: @error-color;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 0 rgba(0,0,0,.045);
+}
