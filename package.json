@@ -14,8 +14,9 @@
     "build:style": "gulp compile:less",
     "build": "run-s \"build:*\"",
     "doc:dev": "docz dev",
-    "doc:build": "rimraf doc-site && docz build",
-    "doc:preview": "docz serve"
+    "doc:build": "rimraf docs && docz build",
+    "doc:preview": "docz serve",
+    "doc:deploy": "gh-pages -d docs"
   },
   "keywords": [],
   "author": "",
@@ -60,6 +61,7 @@
     "enzyme-adapter-react-16": "^1.15.5",
     "gatsby-plugin-less": "^4.3.0",
     "gatsby-plugin-styled-components": "^3.6.0",
+    "gh-pages": "^3.1.0",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-if": "^3.0.0",
