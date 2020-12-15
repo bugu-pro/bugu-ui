@@ -3,7 +3,7 @@ export default {
     title: 'Bugu-UI',
     typescript: true,
     dest: '/docs',
-    base: '/bugu-ui',
+    // base: '/bugu-ui',
     ignore: ['readme.md'],
     description: '一个适用于react的组件库',
     themeConfig: {
