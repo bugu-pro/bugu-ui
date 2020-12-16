@@ -2,6 +2,7 @@
 /dist
 /es
 /lib
+/docs
 .history
 .docz
 *.log
