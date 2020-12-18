@@ -1,12 +1,13 @@
-@import "../../style";
+@import "../../style/index";
 
 @prefix-btn: @{prefix}-btn;
 @bugu-btn-base-height: 32px;
 @bugu-btn-base-size: 14px;
+@bugu-btn-loading-height: 20px;
 
 .@{prefix-btn} {
     height: @bugu-btn-base-height;
-    line-height: 1.5715;
+    line-height: 1.5;
     position: relative;
     display: inline-block;
     font-weight: 400;
@@ -26,6 +27,7 @@
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     & > span {
         display: inline-block;
+        vertical-align: middle;
     }
     &:active, &:focus {
         outline: 0;
@@ -51,6 +53,12 @@
     }
 }
 
+.@{prefix-btn}-loading-icon {
+    margin-right: 4px;
+    width: @bugu-btn-loading-height;
+    height: @bugu-btn-loading-height;
+}
+
 button.@{prefix-btn}-loading {
     pointer-events: none;
     &:before {
@@ -63,6 +71,11 @@ button.@{prefix-btn}-loading {
     padding: 6px 15px;
     font-size: @bugu-btn-base-size + 2;
     border-radius: 2px;
+
+    .@{prefix-btn}-loading-icon {
+        width: @bugu-btn-loading-height + 4;
+        height: @bugu-btn-loading-height + 4;
+    }
 }
 
 .@{prefix-btn}-sm {
@@ -70,10 +83,10 @@ button.@{prefix-btn}-loading {
     padding: 0 7px;
     font-size: @bugu-btn-base-size;
     border-radius: 2px;
-}
-
-.@{prefix-btn}-loading-icon {
-    margin-right: 4px;
+    .@{prefix-btn}-loading-icon {
+        width: @bugu-btn-loading-height - 4;
+        height: @bugu-btn-loading-height - 4;
+    }
 }
 
 .@{prefix-btn}-default {

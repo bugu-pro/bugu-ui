@@ -14,6 +14,9 @@ export const StyledContainer = styled.div`
   border: 1px solid #ebedf0;
   border-radius: 2px;
   transition: all 0.2s;
+  *:focus {
+      outline: 0;
+  }
   .text-divider {
     display: table;
     &::before,

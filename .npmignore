@@ -8,3 +8,6 @@
 tslint.json
 tsconfig.json
 *.log
+/docs
+.history
+.docz

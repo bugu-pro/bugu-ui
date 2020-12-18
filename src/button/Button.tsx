@@ -1,6 +1,6 @@
 import * as React from 'react'
 import cx from 'classnames'
-import LoadingOutlined from '@ant-design/icons/LoadingOutlined'
+import ReactLoading from 'react-loading';
 
 type ButtonProps = {
     children?: any
@@ -32,7 +32,7 @@ const Button = (props: ButtonProps) => {
         <button {...restProps} className={classNames}>
             {loading ? (
                 <span className={`${prefixCls}-loading-icon`}>
-                    <LoadingOutlined />
+                    <ReactLoading type={"spin"} color={"#d9d9d9"} height={'100%'} width={'100%'} />
                 </span>
             ) : null}
             <span>{children}</span>
