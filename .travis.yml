@@ -23,6 +23,7 @@ before_script : "yarn test -- -u"
 
 script: 
   - yarn test
+  - yarn codecov
 
-after_script: 
-  - yarn ci:coverage
+after_sucess: 
+  - codecov -t a71a9e1a-ec30-41eb-9998-611c6e5e9c8d
