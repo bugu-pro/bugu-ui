@@ -1,6 +1,6 @@
 {
   "name": "bugu-ui",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "UI library for React",
   "homepage": "https://bugu-pro.github.io/bugu-ui/",
   "title": "Bugu UI",
@@ -26,7 +26,8 @@
   "files": [
     "dist",
     "lib",
-    "es"
+    "es",
+    "LICENSE"
   ],
   "sideEffects": [
     "dist/*",
