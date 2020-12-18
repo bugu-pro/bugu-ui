@@ -1,13 +1,12 @@
 <div>
   <h1 align="center">BUGU UI</h1>
   <h3 align="center">🦜 bugu-ui 一个实用轻量的React组件库</h3>
-  <p></p>
 </div>
-
+<br>
 [![npm](https://img.shields.io/npm/v/bugu-ui?style=flat-square)](https://www.npmjs.com/package/bugu-ui)
 [![node-current](https://img.shields.io/node/v/bugu-ui?style=flat-square)](https://github.com/bugu-pro/bugu-ui)
 [![npm](https://img.shields.io/npm/dm/bugu-ui?style=flat-square)](https://www.npmjs.com/package/bugu-ui)
-<p></p>
+
 [![Travis (.org)](https://img.shields.io/travis/bugu-pro/bugu-ui?style=flat-square)](https://travis-ci.org/github/bugu-pro/bugu-ui)
 [![Codecov](https://img.shields.io/codecov/c/github/bugu-pro/bugu-ui?style=flat-square&token=I28H1VMRQR)](https://codecov.io/gh/bugu-pro/bugu-ui)
 [![npm bundle size](https://img.shields.io/bundlephobia/minzip/bugu-ui?style=flat-square)](https://bundlephobia.com/result?p=bugu-ui)
