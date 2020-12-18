@@ -50,7 +50,7 @@
   "scripts": {
     "clean": "rm -rf es lib",
     "lint": "tslint -p tsconfig.json",
-    "test": "jest",
+    "test": "jest --coverage",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "prebuild": "rm -rf es lib dist",
     "prepublishOnly": "npm run build",
